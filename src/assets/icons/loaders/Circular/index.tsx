@@ -4,13 +4,11 @@ import './index.scss';
 interface Props {
   className?: string;
   loadingSize?: string;
-  color?: string;
 }
 
 export default function CircularLoading({
   className,
-  loadingSize,
-  color
+  loadingSize
 }: Props): ReactElement {
   return (
     <div
@@ -22,7 +20,7 @@ export default function CircularLoading({
         viewBox='0 0 100 100'
         xmlns='http://www.w3.org/2000/svg'
       >
-        <circle style={{ stroke: color }} cx='50' cy='50' r='45' />
+        <circle cx='50' cy='50' r='45' />
       </svg>
     </div>
   );
